@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marketing Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #111;
+    }
+
+    header p {
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .blog-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 1.5rem;
+    }
+
+    .blog-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #111;
+    }
+
+    .blog-content p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #0066ff;
+      transition: color 0.2s ease;
+    }
+
+    .read-more:hover {
+      color: #0047b3;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marketing Blog</h1>
+    <p>Fresh insights, success stories & creative campaigns from our team</p>
+  </header>
+
+  <div class="blog-container">
+    <div class="blog-card">
+      <img src="blog-images/swiftfix.jpg" alt="Woolworths Cake">
+      <div class="blog-content">
+        <h3>Celebrating 20 Years of Woolworths TASTE</h3>
+        <p>A journey through rich visuals and storytelling that highlights two decades of food excellence.</p>
+        <a href="#" class="read-more">Read more →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="blog-images/swiftfix1.jpg" alt="Mediclinic Story">
+      <div class="blog-content">
+        <h3>Reassurance During a Pandemic</h3>
+        <p>Human-centered healthcare stories captured with authenticity during uncertain times.</p>
+        <a href="#" class="read-more">Read more →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="blog-images/freddie.jpg" alt="McCain Food">
+      <div class="blog-content">
+        <h3>Food Memories with McCain jhjhh</h3>
+        <p>How nostalgic recipes and family moments became powerful brand campaigns.</p>
+        <a href="#" class="read-more">Read more →</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
